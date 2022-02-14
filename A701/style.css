@@ -58,7 +58,7 @@ html {
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family:'ProductSans-Regular', sans-serif;
 
   animation-name: fadeIn;
   animation-duration: 3s;
@@ -156,24 +156,25 @@ section {
 
 #internetTitle {
   position: relative;
-  bottom: 35%;
-  right: 14%;
+  right: 30vw;
+  bottom: 4;
 }
 
 #DBImageCaption {
-  position: relative;
+  padding: 5px;
+  position: absolute;
+  bottom: 7%;
+  left: 5%;
   font-style: italic;
   font-size: 14px;
-  z-index: 99;
-  top: 45%;
-  right: 35%;
+  z-index: 100;
 }
 
 .text1 {
   max-width: 80%;
-  position: relative;
-  bottom: 30%;
+  position: absolute;
   padding-top: 5px;
+  top: 21.5%;
 }
 
 .personalTypes {
