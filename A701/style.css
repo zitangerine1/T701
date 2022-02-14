@@ -4,12 +4,8 @@
  }
 
 @keyframes fadeIn {
-  from { 
-    opacity: 0; 
-  }
-  to   { 
-    opacity: 1; 
-  }
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
 
 @keyframes slideUp {
@@ -40,14 +36,12 @@
 
 html {
   scroll-behavior: smooth;
-  aspect-ratio: 16 / 10;
 } 
 
 #parallaxImage {
   background-image: url('https://www.stengg.com/media/1175766/cyber-security-masthead1.jpg');
 
   min-height: 100vh;
-  min-width: 100%;
 
   background-attachment: fixed;
   background-position: center;
@@ -66,7 +60,6 @@ body {
   overflow-x: hidden;
 
   background-color: black;
-  margin: 10px;
 }
 
 .a1 {
@@ -85,7 +78,7 @@ nav {
   text-align: center;
   line-height: 5vh;
 
-  width: 100vw;
+  width: 100%;
   height: 5vh;
 
   z-index: 100;
@@ -97,11 +90,15 @@ nav a {
   text-decoration: none;
 }
 
+.scrollingBox {
+  overflow-y: scroll;
+}
+
 section {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 100%;
 }
 
 .intro h1 {
@@ -117,34 +114,33 @@ section {
 }
 
 .introduction {
-  position: relative;
-
-  width: 100vw;
+  position: absolute;
+  top: 100%;
+  width: 100%;
   height: 55vh;
 
   background: rgb(236, 234, 234);
 }
 
 .text1 {
-  position: relative;
-  top: 23vh;
-  width: 80vw;
+  position: absolute;
+  top: 23%;
+  width: 80%;
   padding: 20px;
-
-  z-index: 2;
 }
 
 .types {
-  max-width: 60vw;
+  max-width: 60%;
 }
 
 #parallax2 {
   background-image: url("https://wp.technologyreview.com/wp-content/uploads/2018/08/googlecbf009-11.jpg");
 
-  max-height: 100vh;
-  min-width: 100vw;
+  max-height: 100%;
+  width: 100%;
 
-  position: relative;
+  position: absolute;
+  top: 150vh;
 
   background-attachment: fixed;
   background-position: center;
@@ -155,9 +151,10 @@ section {
 }
 
 #internetTitle {
-  position: relative;
-  right: 30vw;
-  bottom: 4;
+  position: absolute;
+  margin-top: 20px;
+  top: 11%;
+  left: 10%;
 }
 
 #DBImageCaption {
@@ -308,35 +305,4 @@ section {
   top: 54%;
   width: 40%;
   right: 10%;
-}
-
-#botnets {
-  position: absolute;
-  top: 61%;
-  left: 10%;
-  max-width: 40%;
-}
-
-#ddosImg {
-  position: absolute;
-  top: 10%;
-  right: 8%;
-
-  max-width: 30vw;
-  max-height: 90vh;
-  z-index: 1;
-}
-
-#ddos {
-  position: absolute;
-  top: 17%;
-  left: 10%;
-  max-width: 45%;
-  padding-right: 15px;
-}
-
-#massIntro {
-  position: absolute;
-  top: 8%;
-  left: 10%;
 }
