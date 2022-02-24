@@ -7,6 +7,18 @@
   }
 }
 
+@keyframes gradiant {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
 @keyframes slideUp {
   0% {
     opacity: 0;
@@ -38,13 +50,11 @@ html {
 }
 
 #parallaxImage {
-  background-image: url('https://www.stengg.com/media/1175766/cyber-security-masthead1.jpg');
-
-  min-height: 100vh;
-  min-width: 100%;
-
-  background-attachment: fixed;
-  background-position: center;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradiant 10s ease infinite;
+  min-height: 200vh;
+  min-width: 200%;
 }
 
 body {
@@ -79,6 +89,7 @@ nav a {
   color: #fff;
   margin: 0 1em;
   text-decoration: none;
+  opacity: 100%;
 }
 
 section {
@@ -86,6 +97,17 @@ section {
   align-items: center;
   justify-content: center;
   height: 100%;
+}
+
+.titleBox {
+  position: absolute;
+  top: 33%;
+  left: 23vw;
+  background-color: white;
+  opacity: 20%;
+  min-height: 30vh;
+  min-width: 55vw;
+  z-index: 30;
 }
 
 .intro h1 {
@@ -223,12 +245,12 @@ section {
 }
 
 .hack {
-  background-color: #239485;
+  background-color: #FFFFFF;
   position: absolute;
   top: 500%;
   width: 103%;
 
-  min-height: 1vh;
+  min-height: 60vh;
 }
 
 #personalTitle {
@@ -339,8 +361,35 @@ section {
 
 #hackerTitle {
   min-width: 60%;
-  position: relative;
-  bottom: 37%;
+  position: absolute;
+  top: 10%;
   left: 10%;
   margin: 20px;
+}
+
+#hackerInfo {
+  min-width: 30%;
+  position: absolute;
+  top: 20%;
+}
+
+#whitehat {
+  max-width: 30%;
+  position: absolute;
+  top: 25%;
+  left: 20%;
+}
+
+#blackhat {
+  max-width: 35%;
+  position: absolute;
+  top: 25%;
+  right: 15%;
+}
+
+#greyhat {
+  max-width: 65%;
+  position: absolute;
+  left: 20%;
+  top: 37%;
 }
