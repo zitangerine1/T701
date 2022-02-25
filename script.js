@@ -1,9 +1,9 @@
-window.addEventListener("load", function () {
+window.onload( function () {
   setTimeout(
     function open(event) {
       document.querySelector(".popup").styles.display = "block";
     },
-    1000
+    500
   )
 });
 
