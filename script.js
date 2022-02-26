@@ -1,5 +1,4 @@
-window.onload = function () {
-  document.getElementById("close").addEventListener("click", function () {
-    document.getElementsByClassName("popup").style.display = "none";
-  });
+function poof() {
+  document.getElementsByClassName("tempBG").display = "none";
+  document.getElementsByClassName("popup").display = "none"
 };
