@@ -21,7 +21,7 @@
 </header>
 
 <div class="popup">
-  <button id="close">&times;</button>
+  <button id="close" onclick="poof()">&times;</button>
   <h2>Heyo...</h2>
   <p>Before you proceed, note that the developer who coded this is really stupid. If some text is overlapping, or spacing between elements are really strange, use Ctrl + and - to adjust until it looks right. Thanks.</p>
 </div>
@@ -38,9 +38,8 @@
 <input id="scrollButton" type="button" onClick="document.getElementById('introduction').scrollIntoView();" />
 <img src="https://www.freeiconspng.com/uploads/white-down-arrow-png-2.png" id="scrollImg" alt="theres supposed to be a arrow here, just click in this general area :D">
 
-<div class="titleBox">
-
-</div>
+<div class="titleBox"></div>
+<div class="tempBG"></div>
 
 <section class='introduction' id='introduction'>
   <h2 id='internetTitle'>| What is the Internet?</h2>
