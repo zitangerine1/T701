@@ -2,8 +2,17 @@
   from {
     opacity: 0;
   }
-  to   {
+  to {
     opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
   }
 }
 
@@ -60,12 +69,25 @@
 
 .tempBG {
   background: dimgray;
-  min-height: 100vh;
+  min-height: 700vh;
   min-width: 100vw;
   position: absolute;
   top: 0;
   opacity: 80%;
   z-index: 10000;
+}
+
+.stop {
+  position: absolute;
+  top: 160%;
+  font-size: xxx-large;
+  color: crimson;
+  z-index: 10001;
+  background: black;
+  min-width: 100vw;
+  min-height: 50vh;
+  display: inline;
+  align-content: center;
 }
 
 .popup button{
@@ -81,51 +103,9 @@
   outline: none;
   cursor: pointer;
 }
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to   {
-    opacity: 1;
-  }
-}
 
-@keyframes gradiant {
-  0% {
-    background-position: 0 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0 50%;
-  }
-}
-
-@keyframes slideUp {
-  0% {
-    opacity: 0;
-    transform: translateY(4rem);
-  }
-  100% {
-    opacity: 1;
-    transform: none;
-  }
-}
-
-@keyframes imagePulse {
-  0% {
-    opacity: 1;
-    transform: none;
-  }
-  50% {
-    opacity: 0.8;
-    transform: scale(0.8);
-  }
-  100% {
-    opacity: 1;
-    transform: none;
-  }
+.popup button:active {
+  animation: fadeOut 2s;
 }
 
 .popup {
@@ -140,7 +120,7 @@
   text-align: center;
 }
 
-.popup button{
+.popup button {
   display: block;
   margin:  0 0 20px auto;
   font-size: 30px;
