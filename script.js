@@ -6,8 +6,10 @@ function poof() {
 
 const popup = document.querySelector(".popup")
 const bg = document.querySelector(".tempBG")
+const stop = document.querySelector(".stop")
 
 document.querySelector("#close").onclick = function () {
   popup.classList.toggle('fade');
   bg.classList.toggle('fade');
+  stop.classList.toggle('fade');
 }
