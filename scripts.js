@@ -10,4 +10,4 @@ const bg = document.querySelector(".tempBG")
 document.querySelector("#close").onclick = function () {
   popup.classList.toggle('fade');
   bg.classList.toggle('fade');
-}`
+}
