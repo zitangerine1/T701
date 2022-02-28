@@ -81,6 +81,10 @@
   opacity: 0;
 }
 
+.stop.fade {
+  opacity: 0;
+}
+
 .tempBG {
   background: dimgray;
   min-height: 500vh;
