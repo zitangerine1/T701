@@ -1,4 +1,5 @@
 function poof() {
-  document.getElementsByClassName("tempBG").style.display = "none";
-  document.getElementsByClassName("popup").style.display = "none"
+  document.querySelector(".tempBG").style.opacity = 0;
+  document.querySelector(".popup").style.opacity = 0;
+  document.querySelector(".stop").style.opacity = 0;
 };
