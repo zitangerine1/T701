@@ -1,4 +1,4 @@
 function poof() {
-  document.getElementsByClassName("tempBG").display = "none";
-  document.getElementsByClassName("popup").display = "none"
+  document.getElementsByClassName("tempBG").style.display = "none";
+  document.getElementsByClassName("popup").style.display = "none"
 };
