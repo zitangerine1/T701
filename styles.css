@@ -54,6 +54,10 @@
   }
 }
 
+.fadeAway {
+  animation: fadeOut;
+}
+
 .popup {
   background-color: white;
   width: 60%;
@@ -65,15 +69,26 @@
   border-radius: 8px;
   text-align: center;
   z-index: 10001;
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.popup.fade{
+  opacity: 0;
+}
+
+.tempBG.fade{
+  opacity: 0;
 }
 
 .tempBG {
   background: dimgray;
-  min-height: 700vh;
+  min-height: 500vh;
   min-width: 100vw;
   position: absolute;
   top: 0;
-  opacity: 80%;
+  opacity: 0.8;
+  transition: opacity 1s;
   z-index: 10000;
 }
 
@@ -102,10 +117,6 @@
   border: none;
   outline: none;
   cursor: pointer;
-}
-
-.popup button:active {
-  animation: fadeOut 2s;
 }
 
 .popup {
