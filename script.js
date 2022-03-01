@@ -8,10 +8,6 @@ function poof() {
   stop.style.opacity = 0;
 };
 
-function poof2() {
-  bg.style.zIndex = 1;
-}
-
 document.querySelector("#close").onclick = function () {
   popup.classList.toggle('fade');
   bg.classList.toggle('fade');
