@@ -70,19 +70,22 @@
   text-align: center;
   z-index: 10001;
   opacity: 1;
-  transition: opacity 1s;
+  transition: z-index 0.5s, opacity 0.5s;
 }
 
 .popup.fade{
   opacity: 0;
+  z-index: 0;
 }
 
 .tempBG.fade{
   opacity: 0;
+  z-index: 0;
 }
 
 .stop.fade {
   opacity: 0;
+  z-index: 0;
 }
 
 .tempBG {
@@ -92,7 +95,7 @@
   position: absolute;
   top: 0;
   opacity: 0.8;
-  transition: opacity 1s;
+  transition: z-index 0.5s, opacity 0.5s;
   z-index: 10000;
 }
 
@@ -123,32 +126,6 @@
   cursor: pointer;
 }
 
-.popup {
-  background-color: white;
-  width: 60%;
-  padding: 30px 40px;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  left: 50%;
-  top: 50%;
-  border-radius: 8px;
-  text-align: center;
-}
-
-.popup button {
-  display: block;
-  margin:  0 0 20px auto;
-  font-size: 30px;
-  color: #ffffff;
-  background-color: #03549a;
-  border-radius: 100%;
-  width: 40px;
-  height: 40px;
-  border: none;
-  outline: none;
-  cursor: pointer;
-}
-
 .popup h2 {
   margin-top: -5%;
 }
@@ -166,8 +143,8 @@ html {
 
 #parallaxImage {
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab, #ffe12b);
-  background-size: 300% 300%;
-  animation: gradiant 5s ease infinite;
+  background-size: 150% 150%;
+  animation: gradiant 0.1s ease infinite;
   min-height: 200vh;
   min-width: 200%;
 }
@@ -192,6 +169,7 @@ nav {
   position: fixed;
   left: -3px;
   top: 0;
+  min-width: 102vw;
   background-color: #000;
   text-align: center;
   line-height: 5vh;
