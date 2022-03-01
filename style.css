@@ -454,7 +454,7 @@ section {
 #hackerTitle {
   min-width: 60%;
   position: absolute;
-  top: 10%;
+  top: 3%;
   left: 10%;
   margin: 20px;
 }
@@ -462,26 +462,43 @@ section {
 #hackerInfo {
   min-width: 30%;
   position: absolute;
-  top: 20%;
+  top: 10%;
 }
 
 #whitehat {
   max-width: 30%;
   position: absolute;
-  top: 25%;
-  left: 20%;
+  top: 15%;
+  left: 10%;
 }
 
 #blackhat {
   max-width: 35%;
   position: absolute;
-  top: 25%;
-  right: 15%;
+  top: 15%;
+  right: 25%;
 }
 
 #greyhat {
   max-width: 65%;
   position: absolute;
-  left: 20%;
-  top: 37%;
+  left: 10%;
+  top: 28%;
+}
+
+#attackImg {
+  max-width: 75%;
+  max-height: 50%;
+  position: absolute;
+  bottom: 8%;
+  right: 49%;
+  border-radius: 7%;
+  padding: 20px;
+}
+
+#imgCaption {
+  max-width: 17%;
+  position: absolute;
+  right: 32%;
+  top: 55%;
 }
