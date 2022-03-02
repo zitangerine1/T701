@@ -70,6 +70,8 @@
   text-align: center;
   z-index: 10001;
   opacity: 1;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   transition: z-index 0.5s, opacity 0.5s;
 }
 
