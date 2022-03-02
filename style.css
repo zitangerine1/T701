@@ -153,6 +153,7 @@ body {
   /* ProductSans has low browser compatibility - use with caution */
   font-family: 'Product Sans', Tahoma, Geneva, Verdana, sans-serif;
   animation-name: fadeIn;
+  animation-delay: 0s;
   animation-duration: 3s;
   overflow-x: hidden;
   background-color: black;
